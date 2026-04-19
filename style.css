@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a7f3d0; /* light background */
+  font-family: Arial;
+}
+
+/* Heading */
+h2 {
+  position: absolute;
+  top: 20px;
+  color: #222;
+}
+
+/* Calculator box */
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Display box */
+#screen {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-sizing: border-box; /* prevents overflow */
+  outline: none;
+}
+
+/* Rows */
+.row {
+  display: flex;
+  width: 100%;
+}
+
+/* Buttons */
+button {
+  flex: 1;
+  height: 55px;
+  margin: 6px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Colors */
+.clear {
+  background: #ef4444; /* red */
+  color: white;
+}
+
+.equal {
+  background: #22c55e; /* green */
+  color: white;
+}
+
+.number {
+  background: #111827; /* black */
+  color: white;
+}
+
+.operator {
+  background: #3b82f6; /* blue */
+  color: white;
+}
+
+.dot {
+  background: #a855f7; /* purple */
+  color: white;
+}
+
+/* Zero button bigger */
+.zero {
+  flex: 2;
+}
+
+/* Optional small hover (nice but simple) */
+button:hover {
+  opacity: 0.85;
+}
